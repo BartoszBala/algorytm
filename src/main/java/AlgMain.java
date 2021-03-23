@@ -20,14 +20,14 @@ public class AlgMain {
     for (int i = 1; i < lista.size() - 1; i++) {
       if (!nodeValue.containsKey(i + 2) && i + 2 <= lista.size()) {
         nodeValue.put(i + 2, lista.get(i + 1) + nodeValue.get(i));
-      } else if (i + 2 <= lista.size() && nodeValue.get(i + 2) < lista.get(i + 1) + nodeValue.get(i)) {
+      } if (i + 2 <= lista.size() && nodeValue.get(i + 2) < lista.get(i + 1) + nodeValue.get(i)) {
         nodeValue.replace(i + 2, lista.get(i + 1) + nodeValue.get(i));
       }
 
       if (!nodeValue.containsKey(i + 3) && i + 3 <= lista.size()) {
         nodeValue.put(i + 3, lista.get(i + 2) + nodeValue.get(i));
       } else if (i + 3 <= lista.size() && nodeValue.get(i + 3) < (i + 3 < lista.size() ? lista.get(i + 2) : 0) + nodeValue.get(i)) {
-        nodeValue.replace(i + 3, (i + 3 < lista.size() ? lista.get(i + 2) : 0) + nodeValue.get(i));
+        nodeValue.replace(i + 3, lista.get(i + 2)  + nodeValue.get(i));
       }
     }
 

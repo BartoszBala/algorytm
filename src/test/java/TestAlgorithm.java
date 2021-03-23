@@ -41,6 +41,7 @@ public class TestAlgorithm {
     assertEquals(4, AlgMain.findMaxSumOfNonNeighborsNumber(list11));
     assertEquals(1001, AlgMain.findMaxSumOfNonNeighborsNumber(list12));
     assertEquals(184, AlgMain.findMaxSumOfNonNeighborsNumber(list13));
+    assertEquals(0, AlgMain.findMaxSumOfNonNeighborsNumber(list14));
     assertEquals(0, AlgMain.findMaxSumOfNonNeighborsNumber(list15));
 
 
